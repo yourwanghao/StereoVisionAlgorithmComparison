@@ -1,0 +1,97 @@
+Stereo Vision Algorithm Demo
+========================================================
+author: Hawk Wang (yourwanghao@gmail.com)
+date: 2015-10-24
+transition: linear
+font-family: 'Helvetica'
+autosize: true
+type: sub-section
+
+Introduction
+========================================================
+
+<small>This demo shows the stereo correspondance algorithm comparison between my algorithm and a competitors'. 
+
+The algorithms are running on a dual camera phone that has one 13M pixels camera, and one 2M pixels camera. <small>You can get more information on my shiny app at https://yourwanghao.shinyapps.io/StereoVisionDemo </small> 
+
+The baseline between the two cameras is 20mm, and below is the camera module:</small>
+
+<img src='images/module.png'>
+
+Main Image and Sub Image
+========================================================
+
+I use the two cameras to take photo at the same time so that I can use stereo vision algorithms to generate disparity maps.
+<small><font color=#ff0000>Note: Sub image is 90 degree to main image.</font></small>
+
+<table>
+<tr>
+<td width=40%><img src='images/mainRGB.jpg' width='100%'></td>
+<td><img src='images/subRGB.jpg' width='85%'></td>
+</tr>
+</table>
+
+Disparity Map Comparison
+========================================================
+<table frame=void rules=none border="0">
+<tr>
+<th> Mine</th>
+<th> Competitor's </th>
+<tr>
+<tr>
+<td><img src='images/mydepth.jpg' width='100%'></td>
+<td><img src='images/competitor.png' width='100%'></td>
+</tr>
+</table>
+
+Performance Comparison
+========================================================
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+    tmp<-read.table('data/my_depth_speed', sep=',')
+    tmp<-tmp[,ncol(tmp)]
+    ckt_speed<-as.numeric(sub("TotalT=","", tmp))
+
+    tmp<-read.table('data/competitor_depth_speed', sep=',')
+    tmp<-tmp[,ncol(tmp)]
+    altek_speed<-as.numeric(sub("TotalT=","", tmp))
+
+    loopnum<-length(ckt_speed)
+
+    ckt_min<-min(ckt_speed)
+    ckt_max<-max(ckt_speed)
+    ckt_mean<-mean(ckt_speed)
+    ckt_sd<-sd(ckt_speed)
+
+    altek_min<-min(altek_speed)
+    altek_max<-max(altek_speed)
+    altek_mean<-mean(altek_speed)
+    altek_sd<-sd(altek_speed)
+
+    all_min<-min(ckt_min, altek_min)
+    all_max<-max(ckt_max, altek_max)
+
+    if (altek_mean>1.5*ckt_mean)
+    {
+      relation<-"much faster"
+    } else if (altek_mean>ckt_mean)
+    {
+      relation<-"faster"
+    } else if (altek_mean<1.5*ckt_mean)
+    {
+      relation<-"much slower"
+    } else
+    {
+      relation<-"slower"
+    }
+
+    plot(1:loopnum, ckt_speed[1:loopnum], type="b", col="red", ylim=c(all_min-0.5,all_max+1), ylab="Disparity generation time(s)", xlab="", pch=15, lty=1)
+    title(main="Figure 1. Speed Comparison", xlab="")
+    lines(1:loopnum, altek_speed[1:loopnum], type="b", lty=2, pch=17, col="blue")
+    legend("topright", c("Competitor's", "Mine"), lty=c(1,2), pch=c(17,15), col=c("blue", "red"))
+```
+***
+<small>As you can see from left figure, we test the disparity generation for ```r loopnum``` times. And
+the result shows that mean time for competitor lib is ```r round(altek_mean,3)``` seconds, while for My lib it is ```r round(ckt_mean,3)``` seconds. Apparently, my lib is ```r relation``` than the competitor's lib.
+
+<font color=#ff0000>Note: The cell phone is based on QCOM MSM8939 platform, disparity map is 896 x 672 pixels</small></font>

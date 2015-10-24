@@ -1,0 +1,10 @@
+10-17 21:58:12.718 E/mylib  ( 4460): Depth: dPVImgW=896, dPVImgH=672, NV21toRGB=0.352322, ResizeT=0.134218, RotateT=0.067109, Rectify=0.369099, StereoCorr=1.451229, TotalT=2.172649
+10-17 21:58:15.628 E/mylib  ( 4469): Depth: dPVImgW=896, dPVImgH=672, NV21toRGB=0.301990, ResizeT=0.117441, RotateT=0.058720, Rectify=0.369099, StereoCorr=1.400898, TotalT=2.071986
+10-17 21:58:18.528 E/mylib  ( 4478): Depth: dPVImgW=896, dPVImgH=672, NV21toRGB=0.301990, ResizeT=0.117441, RotateT=0.058720, Rectify=0.360710, StereoCorr=1.417675, TotalT=2.080375
+10-17 21:58:21.428 E/mylib  ( 4488): Depth: dPVImgW=896, dPVImgH=672, NV21toRGB=0.301990, ResizeT=0.117441, RotateT=0.067109, Rectify=0.360710, StereoCorr=1.451229, TotalT=2.113929
+10-17 21:58:24.398 E/mylib  ( 4497): Depth: dPVImgW=896, dPVImgH=672, NV21toRGB=0.293601, ResizeT=0.117441, RotateT=0.058720, Rectify=0.369099, StereoCorr=1.434452, TotalT=2.097152
+10-17 21:58:27.428 E/mylib  ( 4506): Depth: dPVImgW=896, dPVImgH=672, NV21toRGB=0.293601, ResizeT=0.117441, RotateT=0.075497, Rectify=0.360710, StereoCorr=1.426063, TotalT=2.080375
+10-17 21:58:30.448 E/mylib  ( 4515): Depth: dPVImgW=896, dPVImgH=672, NV21toRGB=0.293601, ResizeT=0.109052, RotateT=0.067109, Rectify=0.369099, StereoCorr=1.434452, TotalT=2.097152
+10-17 21:58:32.906 E/mylib  ( 4524): Depth: dPVImgW=896, dPVImgH=672, NV21toRGB=0.301990, ResizeT=0.117441, RotateT=0.058720, Rectify=0.369099, StereoCorr=1.426063, TotalT=2.097152
+10-17 21:58:35.766 E/mylib  ( 4537): Depth: dPVImgW=896, dPVImgH=672, NV21toRGB=0.293601, ResizeT=0.117441, RotateT=0.067109, Rectify=0.352322, StereoCorr=1.400898, TotalT=2.046820
+10-17 21:58:38.745 E/mylib  ( 4552): Depth: dPVImgW=896, dPVImgH=672, NV21toRGB=0.293601, ResizeT=0.125829, RotateT=0.058720, Rectify=0.377487, StereoCorr=1.442841, TotalT=2.113929

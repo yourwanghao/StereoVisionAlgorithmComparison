@@ -1,0 +1,10 @@
+10-17 21:58:47.595 E/competitorlib( 4566): Depth: dPVImgW=672, dPVImgH=896, dOTPSize=8192, InitT=0.897581, RunT=5.075108, CloseT=0.075497, TotalT=6.048187
+10-17 21:58:53.185 E/competitorlib( 4691): Depth: dPVImgW=672, dPVImgH=896, dOTPSize=8192, InitT=0.654311, RunT=4.445962, CloseT=0.075497, TotalT=5.175772
+10-17 21:58:58.765 E/competitorlib( 4753): Depth: dPVImgW=672, dPVImgH=896, dOTPSize=8192, InitT=0.620757, RunT=4.563403, CloseT=0.083886, TotalT=5.268046
+10-17 21:59:04.445 E/competitorlib( 4809): Depth: dPVImgW=672, dPVImgH=896, dOTPSize=8192, InitT=0.620757, RunT=4.647289, CloseT=0.075497, TotalT=5.343544
+10-17 21:59:09.945 E/competitorlib( 4864): Depth: dPVImgW=672, dPVImgH=896, dOTPSize=8192, InitT=0.620757, RunT=4.479517, CloseT=0.083886, TotalT=5.184160
+10-17 21:59:15.475 E/competitorlib( 4924): Depth: dPVImgW=672, dPVImgH=896, dOTPSize=8192, InitT=0.629146, RunT=4.496294, CloseT=0.075497, TotalT=5.200937
+10-17 21:59:21.265 E/competitorlib( 4994): Depth: dPVImgW=672, dPVImgH=896, dOTPSize=8192, InitT=0.612368, RunT=4.747952, CloseT=0.083886, TotalT=5.444207
+10-17 21:59:27.055 E/competitorlib( 5049): Depth: dPVImgW=672, dPVImgH=896, dOTPSize=8192, InitT=0.603980, RunT=4.672455, CloseT=0.075497, TotalT=5.351932
+10-17 21:59:32.815 E/competitorlib( 5117): Depth: dPVImgW=672, dPVImgH=896, dOTPSize=8192, InitT=0.612368, RunT=4.655677, CloseT=0.075497, TotalT=5.343544
+10-17 21:59:38.365 E/competitorlib( 5171): Depth: dPVImgW=672, dPVImgH=896, dOTPSize=8192, InitT=0.629146, RunT=4.521460, CloseT=0.075497, TotalT=5.226103
